@@ -1,48 +1,120 @@
-body {
-    font-family: 'Arial', sans-serif;
+body,
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
 
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 1em 0;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-nav li {
-    display: inline;
+nav ul li {
+    display: inline-block;
     margin-right: 20px;
 }
 
-section {
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.featured {
     padding: 20px;
 }
 
 .recipe-card {
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px;
+    margin-top: 20px;
+}
+
+
+.categories {
+    padding: 20px;
+}
+
+.categories ul {
+    list-style-type: none;
+}
+
+.categories li {
+    margin-bottom: 10px;
+}
+
+
+.about {
+    padding: 20px;
+}
+
+.chef-info img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.contact {
+    padding: 20px;
 }
 
 form {
     display: grid;
-    gap: 10px;
+    grid-gap: 10px;
 }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 0;
 }
